@@ -4,3 +4,15 @@ language = "en"
 multilingual = false
 src = "src"
 title = "my-nvim-config-docs"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "rust"
+smart-punctuation = true
+mathjax-support = false
+copy-fonts = true
+no-section-label = false
+git-repository-url = "https://github.com/mukappalambda/my-nvim-config-docs"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/rust-lang/mdBook/edit/master/guide/{path}"
+site-url = "https://github.com/mukappalambda/my-nvim-config-docs"
