@@ -65,11 +65,10 @@ Here’s a breakdown of the folder structure:
 
 ## 🛠️ **Useful Commands**
 
-| Command | Description |
-
-|---------------------|---------------------------------|
-| `mdbook build` | Build the static documentation |
-| `mdbook serve` | Serve the documentation locally|
+| Command        | Description                     |
+| -------------- | ------------------------------- |
+| `mdbook build` | Build the static documentation  |
+| `mdbook serve` | Serve the documentation locally |
 
 ## 📦 **Dependencies**
 
