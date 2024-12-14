@@ -23,7 +23,7 @@ To build and view the documentation, you need to have the following installed:
 ### **Clone the Repository**
 
 ```bash
-git clone https://github.com/mukappalambda/my-nvim-config-docs
+git clone https://github.com/mukappalambda/my-nvim-config-docs.git
 cd my-nvim-config-docs
 ```
 
