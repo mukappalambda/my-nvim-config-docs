@@ -14,8 +14,8 @@ If you already have `neovim` installed on your machine, feel free to skip this s
 
 | `neovim` version | Command |
 | --- | --- |
-| `v0.9.x` | `NVIM_VERSION=v0.9.5`
-| `v0.10.x` | `NVIM_VERSION=v0.10.0`
+| ~~`v0.9.x`~~ | ~~`NVIM_VERSION=v0.9.5`~~
+| `v0.10.x` | `NVIM_VERSION=v0.10.3`
 
 For other versions, please refer to neovim's [releases page](https://github.com/neovim/neovim/releases).
 
@@ -50,7 +50,8 @@ nvim --version
 ## Setting Up the Config
 
 ```bash
-mkdir -p $HOME/.config/nvim && git clone https://github.com/kevinliao852/my-nvim-config.git $HOME/.config/nvim/
+mkdir -p $HOME/.config/nvim \
+&& git clone https://github.com/kevinliao852/my-nvim-config.git $HOME/.config/nvim/
 ```
 
 ---
