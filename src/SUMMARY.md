@@ -7,4 +7,5 @@
 
 # Development Environment Setup
 
+- [Go](develop/go.md)
 - [Java](develop/java.md)
