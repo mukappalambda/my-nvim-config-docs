@@ -14,8 +14,9 @@ Follow these steps to set up the documentation locally on your machine.
 
 To build and view the documentation, you need to have the following installed:
 
-- [Rust](https://www.rust-lang.org/tools/install) (required to install mdBook)
-- mdBook: Install it via cargo using the command:
+- [mdBook](https://rust-lang.github.io/mdBook/): Install the `mdbook` binary using your preferred method.
+
+For example, if you want to install it via Cargo:
   ```bash
   cargo install mdbook
   ```
@@ -72,7 +73,6 @@ Here’s a breakdown of the folder structure:
 
 ## 📦 **Dependencies**
 
-- [Rust](https://www.rust-lang.org/): Required to install mdBook.
 - [mdBook](https://rust-lang.github.io/mdBook/): For generating the documentation.
 
 ## 📜 **License**
