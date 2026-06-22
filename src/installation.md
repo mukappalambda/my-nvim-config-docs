@@ -8,41 +8,41 @@ The installation has two parts:
 
 ## Setting Up `neovim`
 
-If you already have `neovim` installed on your machine, feel free to skip this step.
+If you already have `neovim` installed on your machine, make sure it matches the version expected by this config.
 
-1. **Select the `neovim` version**
+The recommended way to install and switch `neovim` versions is [`mise`](https://mise.jdx.dev/). Avoid downloading release artifacts manually unless you have a specific reason to do so; `mise` is faster to use day to day and keeps version management predictable.
 
-| `neovim` version | Command |
-| --- | --- |
-| ~~`v0.9.x`~~ | ~~`NVIM_VERSION=v0.9.5`~~
-| `v0.10.x` | `NVIM_VERSION=v0.10.3`
+The current `my-nvim-config` setup pins `NVIM_VERSION` to `0.11.4`. We are working on upgrading the config to support `nvim` `0.12.0` or newer.
 
-For other versions, please refer to neovim's [releases page](https://github.com/neovim/neovim/releases).
-
-2. **Install `neovim` from pre-compiled binary**
+1. **Search for available `neovim` versions**
 
 ```bash
-wget https://github.com/neovim/neovim/releases/download/"${NVIM_VERSION}"/nvim-linux64.tar.gz
-rm -rf /usr/local/nvim-linux64 && tar -C /usr/local -zxvf nvim-linux64.tar.gz # as root
+mise search neovim
+mise ls-remote neovim
 ```
 
-3. **Setting up the `$PATH` variable**
+2. **Install and use the pinned `neovim` version globally**
 
-- `Bash`
-  - ```bash
-    echo 'PATH=/usr/local/nvim-linux64/bin:$PATH' >> $HOME/.bashrc
-    source $HOME/.bashrc
-    ```
-- `Zsh`
-  - ```bash
-    echo 'PATH=/usr/local/nvim-linux64/bin:$PATH' >> $HOME/.zshrc
-    source $HOME/.zshrc
-    ```
+```bash
+mise use neovim@0.11.4 -g
+```
 
-4. **Check the `neovim` version**
+3. **Check the `neovim` version**
 
 ```bash
 nvim --version
+```
+
+The first line should report `NVIM v0.11.4`.
+
+4. **Optional: install from GitHub releases manually**
+
+Manual artifact installation is slower and harder to maintain. Use it only when `mise` is not available in your environment.
+
+```bash
+NVIM_VERSION=v0.11.4
+wget https://github.com/neovim/neovim/releases/download/"${NVIM_VERSION}"/nvim-linux64.tar.gz
+rm -rf /usr/local/nvim-linux64 && tar -C /usr/local -zxvf nvim-linux64.tar.gz # as root
 ```
 
 ---
